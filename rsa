@@ -9,8 +9,8 @@ def printer(num, i):
 
 def main():
     try:
-        with open(sys.argv[1]) as f:
-            for num in f:
+        with open(sys.argv[1]) as file:
+            for num in file:
                 num = int(num)
                 if num % 2 == 0:
                     printer(num, 2)
